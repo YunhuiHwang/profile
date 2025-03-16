@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yunhee</title>
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="date-time">
+        <span id="date"></span>
+        <span id="clock"></span>
+        <span id="ampm"></span>
+      </div>
+    </div>
+    <div class="photo-window">
+      <div class="photo-header">
+        <div class="buttons">
+          <span class="button btn"></span>
+          <span class="button btn"></span>
+          <span class="button btn"></span>
+        </div>
+        <div class="title">41fc6c4f4b417...</div>
+        <div><img src="./image/oing.png" class="close" /></div>
+      </div>
+      <img src="./image/profile.jpg" />
+    </div>
+    <div class="photo-text">yunhee</div>
+    <div class="photo-text2">yunhee</div>
+    <div>
+      <img src="./image/rabbit.png" class="folder" onclick="openModal(1)" />
+      <img src="./image/tulip.png" class="folder" onclick="openModal(2)" />
+      <img src="./image/clover.png" class="folder" onclick="openModal(3)" />
+      <img src="./image/headphone.png" class="folder" onclick="openModal(4)" />
+      <img src="./image/ball.png" class="folder" onclick="openModal(5)" />
+    </div>
+    <div class="overlay" id="overlay" onclick="closeModal()"></div>
+    <div class="modal" id="modal">
+      <button class="close-btn" onclick="closeModal()">✖</button>
+      <div class="modal-content">
+        <img id="modal-img" class="modal-img" src="" />
+        <div class="modal-text">
+          <p id="modal-title"><strong>제목</strong></p>
+          <p id="modal-description">설명 내용</p>
+        </div>
+      </div>
+    </div>
+    <div class="music-player">
+      <div class="music-header">
+        <div class="music-buttons">
+          <span class="music-btn"></span>
+          <span class="music-btn"></span>
+          <span class="music-btn"></span>
+        </div>
+        <div class="miniplay">MINIPLAY</div>
+        <div></div>
+      </div>
+      <div class="music-container">
+        <img src="./image/album.jpg" class="music-album" />
+        <div class="music-info">
+          <div class="music-title">IlovedyouevenwhenIsmoked</div>
+          <div class="music-artist">Hash Swan</div>
+        </div>
+        <img src="./image/pause.png" class="music-pause" />
+      </div>
+
+      <div class="music-content">
+        <div class="music-progress-container">
+          <div class="music-progress-bar">
+            <div class="music-progress"></div>
+          </div>
+          <div class="music-time">
+            <span id="music-currentTime">0:00</span>
+            <span id="music-remainingTime">-2:43</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="practice.js"></script>
+  </body>
+</html>
